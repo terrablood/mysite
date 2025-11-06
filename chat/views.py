@@ -16,6 +16,10 @@ def signup(request:HttpRequest):
     template = 'chat/signup.html'
     context = {}
     return render(request, template, context)
+def loginc(request:HttpRequest):
+    template = 'chat/logincg.html'
+    context = {}
+    return render(request, template, context)
 def login(request:HttpRequest):
     template = 'chat/login.html'
     context = {}

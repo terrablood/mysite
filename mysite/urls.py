@@ -5,6 +5,7 @@ from chat.views import minesweper
 from chat.views import kezdolap
 from chat.views import signup
 from chat.views import login
+from chat.views import loginc
 
 urlpatterns = [
     path("chat/", include("chat.urls")),
@@ -13,4 +14,5 @@ urlpatterns = [
     path("", kezdolap),
     path("signup", signup),
     path("login", login),
+    path("loginc",loginc),
 ]

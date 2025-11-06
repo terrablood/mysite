@@ -6,6 +6,7 @@ from chat.views import kezdolap
 from chat.views import signup
 from chat.views import login
 from chat.views import loginc
+from chat.views import jatekvalaszto
 
 urlpatterns = [
     path("chat/", include("chat.urls")),
@@ -15,4 +16,6 @@ urlpatterns = [
     path("signup", signup),
     path("login", login),
     path("loginc",loginc),
+    path("jatekvalaszto",jatekvalaszto),
+    path("jatekkeszito",jatekkeszito),
 ]

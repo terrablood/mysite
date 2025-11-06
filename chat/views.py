@@ -12,6 +12,13 @@ def index(request):
 def room(request, room_name):
     return render(request, "chat/room.html", {"room_name": room_name})
 
+def jatekvalaszto(request:HttpRequest):
+    template = 'chat/jatekvalaszto.html'
+    context = {}
+def jatekkeszito(request:HttpRequest):
+    template = 'chat/jatekkeszito.html'
+    context = {}
+
 def signup(request:HttpRequest):
     template = 'chat/signup.html'
     context = {}

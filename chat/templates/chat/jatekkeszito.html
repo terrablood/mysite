@@ -8,6 +8,16 @@
 </head>
 <body>
     <h1>itt indíthatsz játékot</h1>
+    <form action="../letrehoz/" method="post">
+        {% csrf_token %}
+        <div>
+            <p>Név:</p>
+            <input type="text" name="nev" id="nev">
+        </div>
+        <div>
+            <p>Aknaszám:</p>
+            <input type="number" name="aknaszam" id="aknaszam">
+        </div>
     <a href="http://127.0.0.1:8000/minesweper" class="button">create</a>
 </body>
 </html>

@@ -7,6 +7,7 @@ from chat.views import signup
 from chat.views import login
 from chat.views import loginc
 from chat.views import jatekvalaszto
+from chat.views import jatekkeszito
 
 urlpatterns = [
     path("chat/", include("chat.urls")),

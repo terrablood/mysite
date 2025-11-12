@@ -8,6 +8,23 @@
 </head>
 <body>
     <h1>Ezek a jelenleg futó/elérhető játékok!</h1>
-    
+    <table border="3">
+        <tr>
+            <td>aknaszám</td>
+            <td>egyik</td>
+            <td>masik</td>
+            <td>nyertes</td>
+            <td>nev</td>
+        </tr> 
+        {% for jatek in jatekok %}
+            <tr>
+                <td>{{jatek.aknaszám}}</td>
+                <td>{{jatek.egyik}}</td>
+                <td>{{jatek.masik}}</td>
+                <td>{{jatek.nyertes}}</td>
+                <td>{{jatek.nev}}</td>
+            </tr>        
+        {% endfor %}        
+    </table>
 </body>
 </html>
